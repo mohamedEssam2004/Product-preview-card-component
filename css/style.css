@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Josefin+Sans:wght@200;300;400;600&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fraunces:wght@700&family=Josefin+Sans:wght@200;300;400;600&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    padding: 28px;
+    
+}
+.container .left {
+    width: 100%;
+    border-top-left-radius: 10px;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    min-width: 350px;
+    border-top-right-radius: 10px;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .right {
+    width: 100%;
+    height: 60%;
+    padding: 25px;
+    min-width: 350px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container .right h3 {
+    font-size: 11px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.container .right h1 {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.container .right p {
+    width: 295px;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 23px;
+}
+.container .right h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    position: relative;
+}
+.container .right h2 span {
+    position: absolute;
+    display: inline-block;
+    font-size: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 17px;
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+button {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+button:hover {
+    background-color: hsl(158, 42%, 25%);
+}
+button  img {
+    position: absolute;
+    top: 50%;
+    right: 66%;
+    transform: translateY(-50%);
+    width: 15px;
+}
+
+
+@media (min-width: 375px) {
+    .container {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .container .left {
+        width: 50%;
+        max-width: 100px;
+        height: 450px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        background-image: url(../images/image-product-desktop.jpg);
+    }
+    .container .right {
+        width: 50%;
+        max-width: 100px;
+        height: 450px;
+        padding: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .container .right h3 {
+        margin-bottom: 20px;
+    }
+    .container .right h1 {
+        width: 200px;
+        margin-top: 30px;
+    }
+    .container .right p {
+        width: 240px;
+        margin-bottom: 30px;
+    }
+    .container .right h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    button {
+        width: 100%;
+        padding: 14px 30px;
+    }
+}
